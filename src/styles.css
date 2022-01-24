@@ -1,0 +1,94 @@
+.container {
+  margin: 10px;
+  padding: 10px;
+  height: 100;
+}
+
+form {
+  margin: 20px;
+  padding: 10px;
+}
+.your-city {
+  border-radius: 0px;
+  text-align: center;
+  background-color: rgb(231, 230, 230);
+  font-weight: bold;
+}
+.btn.btn-secondary {
+  border-radius: 15px;
+  border-color: black;
+}
+
+h1 {
+  font-weight: bold;
+  color: #153e90;
+  font-family: "Merienda One", cursive;
+}
+.date,
+.current-weather,
+.precipitation,
+.humidity {
+  color: rgba(65, 63, 63, 0.89);
+  border-color: black;
+}
+.date,
+.current-weather {
+  font-weight: bold;
+}
+.current-weather-icon {
+  font-size: 100px;
+  color: yellow;
+  top: right;
+  text-align: center;
+  display: block;
+  border-color: black;
+  float: right;
+  padding: 25, 25px, 25px, 0;
+}
+.current-temperature {
+  position: fixed;
+  top: right;
+  font-size: 70px;
+  float: right;
+  font-family: "Merienda One", cursive;
+  width: 300px;
+  padding: 25, 25px, 25px, 0;
+  text-decoration: none;
+  margin-left: 10px;
+}
+span {
+  margin: 10px;
+}
+
+div.row {
+  width: 65%;
+}
+div.col-2.Monday {
+  background-color: rgb(1, 151, 1);
+  text-align: center;
+  font-weight: bold;
+}
+div.col-2.Tuesday {
+  background-color: rgb(2, 206, 2);
+  text-align: center;
+  font-weight: bold;
+}
+div.col-2.Wednesday {
+  background-color: rgb(255, 136, 0);
+  text-align: center;
+  font-weight: bold;
+}
+div.col-2.Thursday {
+  background-color: rgb(247, 94, 94);
+  text-align: center;
+  font-weight: bold;
+}
+div.col-2.Friday {
+  background-color: rgb(185, 6, 30);
+  text-align: center;
+  font-weight: bold;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+}
