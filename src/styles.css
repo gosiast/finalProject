@@ -1,22 +1,19 @@
-.container {
-  margin: 10px;
+/* Weater app wrapper*/
+
+.weather-app {
+  width: 600px;
+  margin: 10px auto;
   padding: 10px;
-  height: 100;
 }
 
+.weather-app .card {
+  border-radius: 12px;
+}
+
+/* Weater app wrapper*/
+
 form {
-  margin: 20px;
   padding: 10px;
-}
-.your-city {
-  border-radius: 0px;
-  text-align: center;
-  background-color: rgb(209, 209, 209);
-  font-weight: bold;
-}
-.btn.btn-secondary {
-  border-radius: 15px;
-  border-color: black;
 }
 
 h1 {
@@ -38,57 +35,39 @@ h1 {
 .current-weather-icon {
   font-size: 100px;
   color: yellow;
-  top: right;
-  text-align: center;
-  display: block;
-  border-color: black;
-  float: right;
-  padding: 25, 25px, 25px, 0;
 }
 .current-temperature {
-  position: fixed;
-  top: right;
-  font-size: 70px;
-  float: right;
+  white-space: nowrap;
+  text-align: right;
+  margin: 36px -40px 0 0;
+  font-size: 28px;
   font-family: "Merienda One", cursive;
-  width: 300px;
-  padding: 25, 25px, 25px, 0;
-  text-decoration: none;
-  margin-left: 10px;
 }
+
+.current-temperature a {
+  text-decoration: none;
+}
+
 span {
   margin: 10px;
 }
 
-div.row {
-  width: 65%;
-}
-div.col-2.Monday {
-  background-color: rgb(1, 151, 1);
+.day {
   text-align: center;
   font-weight: bold;
 }
-div.col-2.Tuesday {
-  background-color: rgb(2, 206, 2);
-  text-align: center;
-  font-weight: bold;
+.Monday {
+  background-color: rgb(223, 230, 223);
 }
-div.col-2.Wednesday {
-  background-color: rgb(255, 136, 0);
-  text-align: center;
-  font-weight: bold;
+.Tuesday {
+  background-color: rgb(124, 143, 124);
 }
-div.col-2.Thursday {
-  background-color: rgb(247, 94, 94);
-  text-align: center;
-  font-weight: bold;
+.Wednesday {
+  background-color: rgb(247, 201, 149);
 }
-div.col-2.Friday {
-  background-color: rgb(185, 6, 30);
-  text-align: center;
-  font-weight: bold;
+.Thursday {
+  background-color: rgb(241, 183, 183);
 }
-
-.weather-app {
-  border: 1px solid #dadde1;
+.Friday {
+  background-color: rgb(240, 151, 163);
 }

@@ -25,85 +25,91 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <div class="weather app">
-        <form id="search-form">
-          <input
-            type="text"
-            placeholder="What's your city?"
-            class="your-city"
-            id="city-input"
-          />
-          <button
-            id="current-location-button"
-            type="button"
-            class="btn btn-secondary"
-          >
-            GO
-          </button>
-        </form>
-        <div class="row columns">
-          <div class="col-5">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h1 id="city">
-                  Malaga<span class="badge badge-secondary"></span>
-                </h1>
-                <div class="date" id="date-and-time"></div>
-                <div class="current-weather" id="description">Sunny</div>
-                <div class="humidity">
-                  Humidity: <span id="humidity"></span>
+    <div class="weather-app">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <form id="search-form">
+              <div class="row">
+                <div class="col-10">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city-input"
+                      aria-describedby="emailHelp"
+                      placeholder="What's your city?"
+                    />
+                  </div>
                 </div>
-                <div class="wind">Wind: <span id="wind">8</span>m/s</div>
+                <div class="col-2">
+                  <button
+                    id="current-location-button"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    GO
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <h1 class="card-title" id="city">
+                Malaga<span class="badge badge-secondary"></span>
+              </h1>
+              <div class="date" id="date-and-time"></div>
+              <div class="current-weather" id="description">Sunny</div>
+              <div class="humidity">Humidity: <span id="humidity"></span></div>
+              <div class="wind">Wind: <span id="wind">8</span>m/s</div>
+            </div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-6">
+                  <div class="current-temperature" id="current-temperature">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <span class="current-weather-icon">
+                    <i class="fas fa-sun sun-icon"></i>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-5">
-            <div class="clearflix">
-              <span class="current-weather-icon float-right">
-                <i class="fas fa-sun sun-icon"></i>
-              </span>
-              <span>
-                <div class="col-5">
-                  <div class="float-left">
-                    <span class="current-temperature" id="current-temperature">
-                      <a href="#" id="celsius-link">°C</a> |
-                      <a href="#" id="fahrenheit-link">°F</a>
-                    </span>
-                  </div>
-                </div>
-              </span>
+          <div class="row">
+            <div class="col day Monday">
+              Monday <br />
+              19°C
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2 Monday">
-            Monday <br />
-            19°C
-          </div>
-          <div class="col-2 Tuesday">
-            Tuesday
-            <br />
-            19°C
-          </div>
-          <div class="col-2 Wednesday">
-            Wednesday
-            <br />
-            21°C
-          </div>
-          <div class="col-2 Thursday">
-            Thursday
-            <br />
-            17°C
-          </div>
-          <div class="col-2 Friday">
-            Friday
-            <br />
-            19°C
+            <div class="col day Tuesday">
+              Tuesday
+              <br />
+              19°C
+            </div>
+            <div class="col day Wednesday">
+              Wednesday
+              <br />
+              21°C
+            </div>
+            <div class="col day Thursday">
+              Thursday
+              <br />
+              17°C
+            </div>
+            <div class="col day Friday">
+              Friday
+              <br />
+              19°C
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
