@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link href="src/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +21,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href="src/styles.css" rel="stylesheet" />
     <title>Weather App</title>
   </head>
   <body>
@@ -55,7 +55,7 @@
             </form>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-6">
               <h1 class="card-title" id="city">
                 Malaga<span class="badge badge-secondary"></span>
               </h1>
@@ -64,15 +64,15 @@
               <div class="humidity">Humidity: <span id="humidity"></span></div>
               <div class="wind">Wind: <span id="wind">8</span>m/s</div>
             </div>
-            <div class="col-8">
+            <div class="col-6">
               <div class="row">
-                <div class="col-6">
+                <div class="col-4">
                   <div class="current-temperature" id="current-temperature">
                     <a href="#" id="celsius-link">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-8">
                   <span class="current-weather-icon">
                     <i class="fas fa-sun sun-icon"></i>
                   </span>
@@ -108,8 +108,11 @@
           </div>
         </div>
       </div>
+      <a href="https://github.com/gosiast/finalProject" target="_blank"
+        >Open-source code</a
+      >
+      by <a href="https://github.com/gosiast" target="_blank">Gosia Stano</a>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
